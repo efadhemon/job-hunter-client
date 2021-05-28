@@ -71,7 +71,7 @@ input, textarea, select {
     }
 }
 
-.section .container{
+.section .my-container{
     padding-top: 60px;
     padding-bottom: 70px;
 }
@@ -117,7 +117,7 @@ input, textarea, select {
 .padd-15{
     padding: 0 15px;
 }
-.container{
+.my-container{
     max-width: 1100px;
     width: 100%;
     margin: auto;
@@ -262,7 +262,7 @@ body.navy-blue .projects .projects-filter button.active,
 
 /* Responsive Css */
 @media (max-width: 1199px){
-    .section .container{
+    .section .my-container{
         padding-top: 70px;
     }
     .section{

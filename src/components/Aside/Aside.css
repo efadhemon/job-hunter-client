@@ -103,14 +103,15 @@
     transform: rotate(-45deg);
     top: 0;
 }
-.aside .nav{
+.aside .my-nav{
     list-style: none;
     margin: 70px 0 40px 0;
+    padding: 0;
 }
-.aside .nav li{
+.aside .my-nav li{
     display: block;
 }
-.aside .nav li a{
+.aside .my-nav li a{
     font-size: 16px;
     font-weight: 600;
     text-decoration: none;
@@ -121,11 +122,11 @@
     transition: 0.3s;
 }
 
-.aside .nav li a:not(.active):hover{
+.aside .my-nav li a:not(.active):hover{
     padding-left: 5px;
 }
 
-.aside .nav li a svg{
+.aside .my-nav li a svg{
     margin-right: 5px;
 }
 

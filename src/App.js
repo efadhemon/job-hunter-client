@@ -10,7 +10,7 @@ import Aside from './components/Aside/Aside';
 import Admin from './Pages/Admin/Admin';
 import Services from './Pages/Services/Services';
 import Contact from './Pages/Contact/Contact';
-import Projects from './Pages/Projects/Projects';
+import Profile from './Pages/Profile/Profile';
 import Preloader from './components/Preloader/Preloader';
 import Blogs from './Pages/Blogs/Blogs';
 import PrivateRoute from './Login/PrivateRoute/PrivateRoute';
@@ -39,8 +39,8 @@ function App() {
         <Route path='/about'>
           <Admin></Admin>
         </Route>
-        <Route path='/projects'>
-          <Projects></Projects>
+        <Route path='/profile'>
+          <Profile></Profile>
         </Route>
         <Route path='/service'>
           <Services></Services>

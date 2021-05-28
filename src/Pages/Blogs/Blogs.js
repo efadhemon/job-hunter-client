@@ -5,7 +5,7 @@ const Blogs = () => {
     return (
 
         <section id="blog" className="blog section">
-            <div className="container">
+            <div className="my-container">
                 <div className="row">
                     <div className="section-title padd-15">
                         <h2>Latest Blog</h2>
