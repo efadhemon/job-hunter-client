@@ -7,12 +7,14 @@ import {
 } from "react-router-dom";
 import Home from './Pages/Home/Home';
 import Aside from './components/Aside/Aside';
-import About from './Pages/About/About';
+import Admin from './Pages/Admin/Admin';
 import Services from './Pages/Services/Services';
 import Contact from './Pages/Contact/Contact';
 import Projects from './Pages/Projects/Projects';
 import Preloader from './components/Preloader/Preloader';
 import Blogs from './Pages/Blogs/Blogs';
+import PrivateRoute from './Login/PrivateRoute/PrivateRoute';
+import Login from './Login/Login/Login';
 
 window.addEventListener('load', function () {
   document.querySelector('.preloader').classList.add('opacity-0');
@@ -28,14 +30,14 @@ function App() {
       <Aside></Aside>
       <Preloader></Preloader>
       <Switch>
-        <Route exact path='/'>
+        <PrivateRoute exact path='/'>
           <Home></Home>
-        </Route>
-        <Route path='/home'>
-          <Home></Home>
+        </PrivateRoute>
+        <Route path='/login'>
+          <Login></Login>
         </Route>
         <Route path='/about'>
-          <About></About>
+          <Admin></Admin>
         </Route>
         <Route path='/projects'>
           <Projects></Projects>

@@ -1,7 +1,7 @@
 import React from 'react';
-import './About.css';
+import './Admin.css';
 
-const About = () => {
+const Admin = () => {
 
     return (
 
@@ -21,4 +21,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default Admin;
