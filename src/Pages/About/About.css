@@ -1,9 +1,41 @@
-.about .about-content{
-    -ms-flex: 0 0 100%;
-    flex: 0 0 100%;
-    max-width: 100%;
+.form-section {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid red;
 }
-.about .about-content .about-text{
+.form-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.input-area {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.input-area input,
+label,
+textarea,
+select {
+  width: 100%;
+  font-size: 1rem;
+}
+.input-area input {
+  margin-top: 0.5rem;
+  height: 2.3rem;
+}
+.input-area textarea {
+  height: 4rem;
+  padding: 5px;
+}
+.input-area select {
+  height: 2.3rem;
+  margin-bottom: 1rem;
+}
+/* .about .about-content {
+  -ms-flex: 0 0 100%;
+  flex: 0 0 100%;
+  max-width: 100%;
+} */
+/* .about .about-content .about-text{
     -ms-flex: 0 0 100%;
     flex: 0 0 100%;
     max-width: 100%;
@@ -192,32 +224,30 @@
     line-height: 25px;
     color: #504e70;
     margin: 0;
-}
-
-
+} */
 
 /* Responsive Css */
-@media (max-width: 1199px){
-    .about .about-content .personal-info .info-item p span{
-        display: block;
-        margin-left: 0;
-        overflow: auto;
-    }
+@media (max-width: 1199px) {
+  .about .about-content .personal-info .info-item p span {
+    display: block;
+    margin-left: 0;
+    overflow: auto;
+  }
 }
 
-@media (max-width: 767px){
-    .about .about-image,
-    .about .about-content .experience,
-    .about .about-content .education,
-    .about .about-content .skills,
-    .about .about-content .personal-info {
-        -ms-flex: 0 0 100%;
-        flex: 0 0 100%;
-        max-width: 100%;
-    }
+@media (max-width: 767px) {
+  .about .about-image,
+  .about .about-content .experience,
+  .about .about-content .education,
+  .about .about-content .skills,
+  .about .about-content .personal-info {
+    -ms-flex: 0 0 100%;
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
 }
-@media (max-width: 575px){
-    .about .about-content .skills .skills-container{
-        grid-template-columns: repeat(1, 1fr);
-    }
+@media (max-width: 575px) {
+  .about .about-content .skills .skills-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
