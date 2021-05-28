@@ -33,10 +33,10 @@ const Aside = () => {
                     <Link to="/">LOGO</Link>
                 </div>
 
-                <ul id="nav" className="nav">
-                    <li onClick={handleSidebar}><Link to="/" className={mainPath === 'home' ? 'active' : undefined}><FontAwesomeIcon icon={faHome} /> Home</Link></li>
+                <ul id="nav" className="my-nav">
+                    <li onClick={handleSidebar}><Link to="/" className={mainPath === 'home' ? 'active' : undefined}><FontAwesomeIcon icon={faHome} /> Jobs</Link></li>
+                    <li onClick={handleSidebar}><Link to="/profile" className={mainPath === 'profile' ? 'active' : undefined}><FontAwesomeIcon icon={faBriefcase} /> Profile</Link></li>
                     <li onClick={handleSidebar}><Link to="/post-jobs" className={mainPath === 'post-jobs' ? 'active' : undefined}><FontAwesomeIcon icon={faUser} /> Post a Jobs</Link></li>
-                    <li onClick={handleSidebar}><Link to="/projects" className={mainPath === 'projects' ? 'active' : undefined}><FontAwesomeIcon icon={faBriefcase} /> Projects</Link></li>
                     <li onClick={handleSidebar}><Link to="/service" className={mainPath === 'service' ? 'active' : undefined}><FontAwesomeIcon icon={faList} /> Services</Link></li>
                     <li onClick={handleSidebar}><Link to="/blog" className={mainPath === 'blog' ? 'active' : undefined}><FontAwesomeIcon icon={faEnvelope} /> Blog</Link></li>
                     <li onClick={handleSidebar}><Link to="/contact" className={mainPath === 'contact' ? 'active' : undefined}><FontAwesomeIcon icon={faComments} /> Contact</Link></li>
