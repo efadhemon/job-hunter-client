@@ -1,0 +1,32 @@
+.form-section {
+  width: 50%;
+  margin: 0 auto;
+  border: 1px solid red;
+}
+.form-container {
+  width: 90%;
+  margin: 0 auto;
+}
+.input-area {
+  margin-bottom: 1.5rem;
+  width: 100%;
+}
+.input-area input,
+label,
+textarea,
+select {
+  width: 100%;
+  font-size: 1rem;
+}
+.input-area input {
+  margin-top: 0.5rem;
+  height: 2.3rem;
+}
+.input-area textarea {
+  height: 4rem;
+  padding: 5px;
+}
+.input-area select {
+  height: 2.3rem;
+  margin-bottom: 1rem;
+}

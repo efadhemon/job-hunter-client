@@ -10,6 +10,7 @@ import Preloader from "./components/Preloader/Preloader";
 import Blogs from "./Pages/Blogs/Blogs";
 import PrivateRoute from "./Login/PrivateRoute/PrivateRoute";
 import Login from "./Login/Login/Login";
+import JobPosting from "./Pages/JobPosting/JobPosting";
 
 window.addEventListener("load", function () {
   document.querySelector(".preloader").classList.add("opacity-0");
@@ -29,6 +30,9 @@ function App() {
         </PrivateRoute>
         <Route path="/login">
           <Login></Login>
+        </Route>
+        <Route path="/post-jobs">
+          <JobPosting></JobPosting>
         </Route>
         <Route path="/about">
           <Admin></Admin>
