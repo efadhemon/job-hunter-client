@@ -1,10 +1,33 @@
-import React from 'react';
+import React, { useState } from 'react';
+import JobCard from '../../components/JobCard/JobCard';
 import './Home.css'
 const Home = () => {
+    const [keywords, setKeywords] = useState('');
+    const handleChange = (e) => {
+        const newKeywords = e.target.value;
+        console.log(newKeywords);
+        setKeywords(newKeywords);
+        e.preventDefault();
+    }
+    const handleSubmit = (e) => {
+        console.log(keywords);
+        alert(`We got   : ${keywords}`)
+        e.preventDefault();
+    }
     return (
         <section id="home" className="home section">
             <div className="container">
-                <h1>I Have Checked</h1>
+                <form onSubmit={handleSubmit} className="search_bar">
+                    <input placeholder='Search Your Desired Job' onChange={handleChange} type="text" />
+                    <button type="submit">  Search </button>
+                </form>
+                <div className="card_container">
+                    <JobCard />
+                    <JobCard />
+                    <JobCard />
+                    <JobCard />
+                    <JobCard />
+                </div>
             </div>
         </section>
     );

@@ -1,0 +1,49 @@
+.job_card {
+  border-radius: 20px;
+  box-shadow: 0px 10px 30px gray;
+  padding: 20px;
+}
+.intro {
+  margin: 10px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.job_summary {
+  margin: 10px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+}
+.btn_container {
+  margin-top: 20px;
+}
+.card_btn {
+  width: 100%;
+  padding: 10px 20px;
+  border-radius: 20px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  background-color: teal;
+  color: white;
+  border: 1px solid teal;
+  cursor: pointer;
+}
+.card_btn:hover {
+  color: teal;
+  background-color: transparent;
+}
+.card_btn:active {
+  opacity: 0.67;
+}
+.summary_card {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+.summary_card img {
+  display: block;
+  width: 20px;
+}

@@ -1,0 +1,49 @@
+.search_bar {
+  max-width: 450px;
+  display: flex;
+  height: 40px;
+  margin: 0 auto;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid teal;
+}
+.search_bar > * {
+  background-color: white;
+}
+.search_bar > input {
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  outline: none;
+  font-size: large;
+  border: none;
+  width: 100%;
+  text-align: center;
+}
+.search_bar button {
+  color: white;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: teal;
+  border: 1px solid teal;
+  cursor: pointer;
+  outline: none;
+  font-size: large;
+  padding: 5px 15px;
+  transition: all 0.3s ease-in-out;
+}
+.search_bar button:active {
+  opacity: 0.5;
+}
+.search_bar button:hover {
+  outline: none;
+  color: teal;
+  background-color: transparent;
+}
+.card_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 100px 20px;
+  gap: 50px;
+  flex-wrap: wrap;
+}
