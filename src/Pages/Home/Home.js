@@ -22,12 +22,20 @@ const Home = () => {
                     <input placeholder='Search Your Desired Job' onChange={handleChange} type="text" />
                     <button type="submit">  Search </button>
                 </form>
-                <div className="card_container">
-                    <JobCard icon={jobIcon} />
-                    <JobCard />
-                    <JobCard />
-                    <JobCard />
-                    <JobCard />
+                <div className="home_container">
+
+                    <div className="card_container">
+                        <JobCard icon={jobIcon} />
+                        <JobCard />
+                        <JobCard />
+                        <JobCard />
+                        <JobCard />
+                    </div>
+                    <div className='job_details'>
+                        <h1>
+                            Details
+                        </h1>
+                    </div>
                 </div>
             </div>
         </section>
