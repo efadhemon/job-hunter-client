@@ -1,12 +1,12 @@
 import React from 'react';
-import './About.css';
+import './Admin.css';
 
-const About = () => {
+const Admin = () => {
 
     return (
 
         <section id="about" className="about section">
-            <div className="container">
+            <div className="my-container">
                 <div className="row">
                     <div className="section-title padd-15">
                         <h2>About Me</h2>
@@ -21,4 +21,4 @@ const About = () => {
     );
 };
 
-export default About;
+export default Admin;

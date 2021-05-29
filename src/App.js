@@ -1,58 +1,57 @@
+import "./App.css";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Home from "./Pages/Home/Home";
+import Aside from "./components/Aside/Aside";
+import Admin from "./Pages/Admin/Admin";
+import Services from "./Pages/Services/Services";
+import Contact from "./Pages/Contact/Contact";
+import Profile from "./Pages/Profile/Profile";
+import Preloader from "./components/Preloader/Preloader";
+import Blogs from "./Pages/Blogs/Blogs";
+import PrivateRoute from "./Login/PrivateRoute/PrivateRoute";
+import Login from "./Login/Login/Login";
+import JobPosting from "./Pages/JobPosting/JobPosting";
 
-import './App.css';
-import {
-  BrowserRouter as Router,
-  Switch,
-  Route
-} from "react-router-dom";
-import Home from './Pages/Home/Home';
-import Aside from './components/Aside/Aside';
-import About from './Pages/About/About';
-import Services from './Pages/Services/Services';
-import Contact from './Pages/Contact/Contact';
-import Projects from './Pages/Projects/Projects';
-import Preloader from './components/Preloader/Preloader';
-import Blogs from './Pages/Blogs/Blogs';
-
-window.addEventListener('load', function () {
-  document.querySelector('.preloader').classList.add('opacity-0');
+window.addEventListener("load", function () {
+  document.querySelector(".preloader").classList.add("opacity-0");
   setTimeout(() => {
-    document.querySelector('.preloader').style.display = 'none';
-  }, 1000)
-})
+    document.querySelector(".preloader").style.display = "none";
+  }, 1000);
+});
 
 function App() {
-  
   return (
     <Router>
       <Aside></Aside>
       <Preloader></Preloader>
       <Switch>
-        <Route exact path='/'>
+        <PrivateRoute exact path="/">
           <Home></Home>
+        </PrivateRoute>
+        <Route path="/login">
+          <Login></Login>
         </Route>
-        <Route path='/home'>
-          <Home></Home>
-        </Route>
-        <Route path='/about'>
-          <About></About>
-        </Route>
-        <Route path='/projects'>
-          <Projects></Projects>
-        </Route>
-        <Route path='/service'>
+        <PrivateRoute path="/post-jobs">
+          <JobPosting></JobPosting>
+        </PrivateRoute>
+        <PrivateRoute path="/about">
+          <Admin></Admin>
+        </PrivateRoute>
+        <PrivateRoute path="/profile">
+          <Profile></Profile>
+        </PrivateRoute>
+        <PrivateRoute path="/service">
           <Services></Services>
-        </Route>
-        <Route path='/blog'>
+        </PrivateRoute>
+        <PrivateRoute path="/blog">
           <Blogs></Blogs>
-        </Route>
-        <Route path='/contact'>
+        </PrivateRoute>
+        <PrivateRoute path="/contact">
           <Contact></Contact>
-        </Route>
+        </PrivateRoute>
       </Switch>
     </Router>
   );
-
 }
 
 export default App;

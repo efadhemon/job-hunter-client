@@ -17,7 +17,7 @@ const Home = () => {
     }
     return (
         <section id="home" className="home section">
-            <div className="container">
+            <div className="my-container">
                 <form onSubmit={handleSubmit} className="search_bar">
                     <input placeholder='Search Your Desired Job' onChange={handleChange} type="text" />
                     <button type="submit">  Search </button>
