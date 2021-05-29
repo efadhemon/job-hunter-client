@@ -43,7 +43,19 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   margin: 100px 20px;
-  gap: 50px;
+  gap: 10px;
   flex-wrap: wrap;
+}
+
+.home_container {
+  display: flex;
+  flex-wrap: wrap;
+}
+.job_details {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: 100px 20px;
 }

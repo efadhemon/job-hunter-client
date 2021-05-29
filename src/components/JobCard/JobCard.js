@@ -10,45 +10,42 @@ const JobCard = ({ icon }) => {
             <div className="title_bar">
                 <div className="intro">
                     <img src={icon} alt="" />
-                    <div className="price-tag">
-                        <p>Max: $ 56k</p>
-                        <p>Min: $ 33k</p>
-                    </div>
                 </div>
-                <h3>
-                    Job Title
+                <div>
+                    <h3>
+                        Job Title
                 </h3>
-                <p>
-                    company Name
+                    <p>
+                        company Name
                 </p>
-                <p>
-                    location
-                </p>
+                </div>
             </div>
-            <div className="job_summary">
-                <div className="summary_card">
-                    <img src={employeeIcon} alt="" />
-                    <p>Employee</p>
-                </div>
-                <div className="summary_card">
-                    <img src={experienceIcon} alt="" />
-                    <p>Experience</p>
-                </div>
-                <div className="summary_card">
-                    <img src={typeIcon} alt="" />
-                    <p> Job Type </p>
-                </div>
-                <div className="summary_card">
-                    <img src={shiftIcon} alt="" />
-                    <p> Shift </p>
+            <div>
+                <div className="job_summary">
+                    <div className="summary_card">
+                        <img src={employeeIcon} alt="" />
+                        <p>Employee</p>
+                    </div>
+                    <div className="summary_card">
+                        <img src={experienceIcon} alt="" />
+                        <p>Experience</p>
+                    </div>
+                    <div className="summary_card">
+                        <img src={typeIcon} alt="" />
+                        <p> Job Type </p>
+                    </div>
+                    <div className="summary_card">
+                        <img src={shiftIcon} alt="" />
+                        <p> Salary: 45k-50k </p>
+                    </div>
                 </div>
             </div>
 
-            <div className="btn_container">
+            {/* <div className="btn_container">
                 <button className='card_btn'>
                     Apply
             </button>
-            </div>
+            </div> */}
 
         </div>
     );
