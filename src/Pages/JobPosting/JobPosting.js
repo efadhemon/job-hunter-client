@@ -1,6 +1,6 @@
 import React from "react";
-import "./JobPosting.css";
 import { useForm } from "react-hook-form";
+import "./JobPosting.css";
 
 const JobPosting = () => {
   const {
@@ -13,7 +13,6 @@ const JobPosting = () => {
     <section id="about" className="about section">
       <div className="my-container">
         <div className="form-section ">
-          {/* <h2>Form</h2> */}
           <div className="form-container">
             <form onSubmit={handleSubmit(onSubmit)}>
               <div className="input-area">

@@ -11,7 +11,7 @@ const Aside = () => {
     let mainPath = pathname.split('/')[1];
 
     if (!mainPath) {
-        mainPath = 'home'
+        mainPath = 'jobs'
     }
 
     const handleSidebar = () => {
@@ -34,7 +34,7 @@ const Aside = () => {
                 </div>
 
                 <ul id="nav" className="my-nav">
-                    <li onClick={handleSidebar}><Link to="/" className={mainPath === 'home' ? 'active' : undefined}><FontAwesomeIcon icon={faHome} /> Jobs</Link></li>
+                    <li onClick={handleSidebar}><Link to="/" className={mainPath === 'jobs' ? 'active' : undefined}><FontAwesomeIcon icon={faHome} /> Jobs</Link></li>
                     <li onClick={handleSidebar}><Link to="/profile" className={mainPath === 'profile' ? 'active' : undefined}><FontAwesomeIcon icon={faBriefcase} /> Profile</Link></li>
                     <li onClick={handleSidebar}><Link to="/post-jobs" className={mainPath === 'post-jobs' ? 'active' : undefined}><FontAwesomeIcon icon={faUser} /> Post a Jobs</Link></li>
                     <li onClick={handleSidebar}><Link to="/service" className={mainPath === 'service' ? 'active' : undefined}><FontAwesomeIcon icon={faList} /> Services</Link></li>

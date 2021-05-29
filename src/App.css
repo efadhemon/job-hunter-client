@@ -158,13 +158,13 @@ body.dark .projects .projects-filter button.active,
 body.navy-blue .projects .projects-filter button.active,
 .projects .projects-filter button.active,
 .service .service-box .service-item .icon svg,
-body.dark .aside .nav li a:hover,
-body.dark .aside .nav li a.active,
-body.navy-blue .aside .nav li a:hover,
-body.navy-blue .aside .nav li a.active,
+body.dark .aside .my-nav li a:hover,
+body.dark .aside .my-nav li a.active,
+body.navy-blue .aside .my-nav li a:hover,
+body.navy-blue .aside .my-nav li a.active,
 .aside .resume-btn a,
-.aside .nav li a:hover,
-.aside .nav li a.active {
+.aside .my-nav li a:hover,
+.aside .my-nav li a.active {
   color: #ec1839 !important;
 }
 .blog .blog-item .blog-img .blog-date,
