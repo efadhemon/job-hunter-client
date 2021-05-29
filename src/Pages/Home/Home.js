@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import JobCard from '../../components/JobCard/JobCard';
 import './Home.css'
+import jobIcon from '../../images/icons/tech-reactjs.svg'
 const Home = () => {
     const [keywords, setKeywords] = useState('');
     const handleChange = (e) => {
@@ -22,7 +23,7 @@ const Home = () => {
                     <button type="submit">  Search </button>
                 </form>
                 <div className="card_container">
-                    <JobCard />
+                    <JobCard icon={jobIcon} />
                     <JobCard />
                     <JobCard />
                     <JobCard />

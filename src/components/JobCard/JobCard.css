@@ -9,6 +9,9 @@
   justify-content: space-between;
   align-items: center;
 }
+.intro > img {
+  width: 60px;
+}
 
 .job_summary {
   margin: 10px 0;
