@@ -31,24 +31,24 @@ function App() {
         <Route path="/login">
           <Login></Login>
         </Route>
-        <Route path="/post-jobs">
+        <PrivateRoute path="/post-jobs">
           <JobPosting></JobPosting>
-        </Route>
-        <Route path="/about">
+        </PrivateRoute>
+        <PrivateRoute path="/about">
           <Admin></Admin>
-        </Route>
-        <Route path="/profile">
+        </PrivateRoute>
+        <PrivateRoute path="/profile">
           <Profile></Profile>
-        </Route>
-        <Route path="/service">
+        </PrivateRoute>
+        <PrivateRoute path="/service">
           <Services></Services>
-        </Route>
-        <Route path="/blog">
+        </PrivateRoute>
+        <PrivateRoute path="/blog">
           <Blogs></Blogs>
-        </Route>
-        <Route path="/contact">
+        </PrivateRoute>
+        <PrivateRoute path="/contact">
           <Contact></Contact>
-        </Route>
+        </PrivateRoute>
       </Switch>
     </Router>
   );
