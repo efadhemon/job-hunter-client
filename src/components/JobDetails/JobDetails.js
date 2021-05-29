@@ -18,7 +18,7 @@ const JobDetails = () => {
           <button className="save-btn">save</button>
         </div>
       </div>
-      <hr />
+      <hr className="hr-style" />
       <div className="job_summary">
         <div className="summary_card">
           <img src={employeeIcon} alt="" />

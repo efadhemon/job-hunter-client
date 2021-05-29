@@ -10,11 +10,12 @@
 }
 .job-main {
   margin-right: 2rem;
+  margin-bottom: 2rem;
 }
 .details-container {
   display: flex;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 .job-content {
   margin: 2rem 0;
@@ -34,4 +35,7 @@
   border: 1px solid teal;
   margin-left: 1rem;
   color: teal;
+}
+.hr-style {
+  border: 1px solid rgb(190, 188, 188);
 }
