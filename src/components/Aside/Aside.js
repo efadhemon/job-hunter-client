@@ -1,9 +1,9 @@
-
-import { faComments, faUser, faBriefcase, faEnvelope, faHome, faList, faDownload } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import './Aside.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faComments, faUser, faBriefcase, faAddressCard, faList, faHeart } from '@fortawesome/free-solid-svg-icons';
+
 
 const Aside = () => {
 
@@ -34,11 +34,11 @@ const Aside = () => {
                 </div>
 
                 <ul id="nav" className="my-nav">
-                    <li onClick={handleSidebar}><Link to="/" className={mainPath === 'jobs' ? 'active' : undefined}><FontAwesomeIcon icon={faHome} /> Jobs</Link></li>
-                    <li onClick={handleSidebar}><Link to="/profile" className={mainPath === 'profile' ? 'active' : undefined}><FontAwesomeIcon icon={faBriefcase} /> Profile</Link></li>
-                    <li onClick={handleSidebar}><Link to="/post-jobs" className={mainPath === 'post-jobs' ? 'active' : undefined}><FontAwesomeIcon icon={faUser} /> Post a Jobs</Link></li>
-                    <li onClick={handleSidebar}><Link to="/service" className={mainPath === 'service' ? 'active' : undefined}><FontAwesomeIcon icon={faList} /> Services</Link></li>
-                    <li onClick={handleSidebar}><Link to="/blog" className={mainPath === 'blog' ? 'active' : undefined}><FontAwesomeIcon icon={faEnvelope} /> Blog</Link></li>
+                    <li onClick={handleSidebar}><Link to="/" className={mainPath === 'jobs' ? 'active' : undefined}><FontAwesomeIcon icon={faBriefcase} /> Jobs</Link></li>
+                    <li onClick={handleSidebar}><Link to="/profile" className={mainPath === 'profile' ? 'active' : undefined}><FontAwesomeIcon icon={faUser} /> Profile</Link></li>
+                    <li onClick={handleSidebar}><Link to="/post-jobs" className={mainPath === 'post-jobs' ? 'active' : undefined}><FontAwesomeIcon icon={faAddressCard} /> Post a Jobs</Link></li>
+                    <li onClick={handleSidebar}><Link to="/applied-jobs" className={mainPath === 'applied-jobs' ? 'active' : undefined}><FontAwesomeIcon icon={faList} /> Applied Jobs</Link></li>
+                    <li onClick={handleSidebar}><Link to="/favorite-jobs" className={mainPath === 'favorite-jobs' ? 'active' : undefined}><FontAwesomeIcon icon={faHeart} /> Favorite Jobs</Link></li>
                     <li onClick={handleSidebar}><Link to="/contact" className={mainPath === 'contact' ? 'active' : undefined}><FontAwesomeIcon icon={faComments} /> Contact</Link></li>
                 </ul>
 

@@ -5,8 +5,8 @@ import { useHistory, useLocation } from 'react-router';
 import { createUserWithEmailAndPassword, handleFbSingIn, handleGoogleSignIn, initializeLoginFramework, signInWithEmailAndPassword } from './LoginManager';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEyeSlash, faEye, faExpandArrowsAlt } from '@fortawesome/free-solid-svg-icons';
-import facebook from '../../images/icon/facebook.png';
-import google from '../../images/icon/google.png';
+import facebook from '../../../images/icons/facebook.png';
+import google from '../../../images/icons/google.png';
 import swal from 'sweetalert';
 
 
