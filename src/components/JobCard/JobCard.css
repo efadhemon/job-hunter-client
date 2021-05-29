@@ -1,7 +1,14 @@
 .job_card {
   border-radius: 20px;
-  box-shadow: 0px 10px 30px gray;
+  border: 1px solid teal;
   padding: 20px;
+  gap: 20px;
+  width: 350px;
+}
+.title_bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 .intro {
   margin: 10px 0;
@@ -46,7 +53,9 @@
   align-items: center;
   gap: 5px;
 }
+.summary_card p {
+  margin: 0;
+}
 .summary_card img {
-  display: block;
   width: 20px;
 }
