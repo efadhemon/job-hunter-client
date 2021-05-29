@@ -2,8 +2,7 @@
   border-radius: 20px;
   border: 1px solid teal;
   padding: 30px;
-  /* height: 500px; */
-  width: 520px;
+  width: 100%;
 }
 .company-logo {
   width: 120px;

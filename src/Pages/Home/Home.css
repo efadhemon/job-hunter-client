@@ -44,7 +44,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  margin: 100px 20px;
+  margin: 100px 0;
   gap: 10px;
   flex-wrap: wrap;
 }
@@ -54,6 +54,7 @@
   flex-wrap: wrap;
 }
 .job_details {
+  width: 60%;
   display: flex;
   align-items: center;
   flex-direction: column;
