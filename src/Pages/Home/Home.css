@@ -19,7 +19,8 @@
   width: 100%;
   text-align: center;
 }
-.search_bar button {
+.search_bar button,
+.btn_main {
   color: white;
   border-bottom-left-radius: 8px;
   border-top-right-radius: 8px;
@@ -27,14 +28,15 @@
   border: 1px solid teal;
   cursor: pointer;
   outline: none;
-  font-size: large;
   padding: 5px 15px;
   transition: all 0.3s ease-in-out;
 }
-.search_bar button:active {
+.search_bar button:active,
+.btn_main:active {
   opacity: 0.5;
 }
-.search_bar button:hover {
+.search_bar button:hover,
+.btn_main:hover {
   outline: none;
   color: teal;
   background-color: transparent;

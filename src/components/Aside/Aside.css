@@ -1,157 +1,162 @@
-.aside{
-    width: 270px;
-    background-color: #fdf9ff;
-    position: fixed;
-    height: 100%;
-    left: 0;
-    top: 0;
-    z-index: 11;
-    border-right: 1px solid #e8dfec;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+.aside {
+  width: 270px;
+  background-color: #fdf9ff;
+  position: fixed;
+  height: 100%;
+  left: 0;
+  top: 0;
+  z-index: 11;
+  border-right: 1px solid #e8dfec;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
 .aside .aside-inner {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    left: 0;
-    top: 0;
-    padding: 0px 30px;
-    overflow-y: auto;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  padding: 0px 30px;
+  overflow-y: auto;
 }
-.aside .logo{
-    padding: 30px 0;
+.aside {
+  padding: 30px 0;
 }
-.aside .logo a{
-    font-size: 40px;
-    color: #302e4d;
-    font-family: 'Rubik', sans-serif;
-    font-weight: 700;
-    text-decoration: none;
-    display: inline-block;
-    position: relative;
-    padding: 0 10px;
-    line-height: 50px;
+.logo {
+  margin-top: 100px;
 }
-.aside .logo a::before{
-    content: '';
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    top: 0;
-    left: 0;
+.logo img {
+  width: 200px;
+  padding: 5px;
 }
-.aside .logo a::after{
-    content: '';
-    height: 20px;
-    width: 20px;
-    position: absolute;
-    bottom: 0;
-    right: 0;
+.aside .logo a {
+  font-size: 40px;
+  color: #302e4d;
+  font-family: "Rubik", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  display: inline-block;
+  position: relative;
+  padding: 0 10px;
+  line-height: 50px;
 }
-.aside .nav-toggler{
-    height: 40px;
-    width: 40px;
-    border: 1px solid #d4d4e3;
-    cursor: pointer;
-    position: fixed;
-    left: 300px;
-    top: 20px;
-    z-index: 11;
-    border-radius: 5px;
-    background-color: #fdf9ff;
-    display: none;
-    -ms-flex-align: center;
-    align-items: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-transition: all 0.3s ease;
-    transition: all 0.3s ease;
+.aside .logo a::before {
+  content: "";
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
-.aside .nav-toggler span{
-    height: 2px;
-    width: 18px;
-    display: inline-block;
-    position: relative;
+.aside .logo a::after {
+  content: "";
+  height: 20px;
+  width: 20px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
 }
-.aside .nav-toggler.open span{
-    background-color: transparent !important;
+.aside .nav-toggler {
+  height: 40px;
+  width: 40px;
+  border: 1px solid #d4d4e3;
+  cursor: pointer;
+  position: fixed;
+  left: 300px;
+  top: 20px;
+  z-index: 11;
+  border-radius: 5px;
+  background-color: #fdf9ff;
+  display: none;
+  -ms-flex-align: center;
+  align-items: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
 }
-.aside .nav-toggler span::before{
-    content: '';
-    height: 2px;
-    width: 18px;
-    position: absolute;
-    top: -6px;
-    left: 0;
+.aside .nav-toggler span {
+  height: 2px;
+  width: 18px;
+  display: inline-block;
+  position: relative;
 }
-.aside .nav-toggler.open span::before{
-    -webkit-transform: rotate(45deg);
-    transform: rotate(45deg);
-    top: 0;
+.aside .nav-toggler.open span {
+  background-color: transparent !important;
 }
-.aside .nav-toggler span::after{
-    content: '';
-    height: 2px;
-    width: 18px;
-    position: absolute;
-    top: 6px;
-    left: 0;
+.aside .nav-toggler span::before {
+  content: "";
+  height: 2px;
+  width: 18px;
+  position: absolute;
+  top: -6px;
+  left: 0;
 }
-.aside .nav-toggler.open span::after{
-    -webkit-transform: rotate(-45deg);
-    transform: rotate(-45deg);
-    top: 0;
+.aside .nav-toggler.open span::before {
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  top: 0;
 }
-.aside .my-nav{
-    list-style: none;
-    margin: 70px 0 40px 0;
-    padding: 0;
+.aside .nav-toggler span::after {
+  content: "";
+  height: 2px;
+  width: 18px;
+  position: absolute;
+  top: 6px;
+  left: 0;
 }
-.aside .my-nav li{
-    display: block;
+.aside .nav-toggler.open span::after {
+  -webkit-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  top: 0;
 }
-.aside .my-nav li a{
-    font-size: 16px;
-    font-weight: 600;
-    text-decoration: none;
-    color: #302e4d;
-    line-height: 45px; 
-    display: block;
-    border-bottom: 1px solid #e8dfec;
-    transition: 0.3s;
+.aside .my-nav {
+  list-style: none;
+  margin: 70px 0 40px 0;
+  padding: 0;
+}
+.aside .my-nav li {
+  display: block;
+}
+.aside .my-nav li a {
+  font-size: 16px;
+  font-weight: 600;
+  text-decoration: none;
+  color: #302e4d;
+  line-height: 45px;
+  display: block;
+  border-bottom: 1px solid #e8dfec;
+  transition: 0.3s;
 }
 
-.aside .my-nav li a:not(.active):hover{
-    padding-left: 5px;
+.aside .my-nav li a:not(.active):hover {
+  padding-left: 5px;
 }
 
-.aside .my-nav li a svg{
-    margin-right: 5px;
+.aside .my-nav li a svg {
+  margin-right: 5px;
 }
 
-
-.aside .copyright-text{
-    font-size: 13px;
-    color: #7d7d7d;
-    padding: 80px 0 0 0;
-
+.aside .copyright-text {
+  font-size: 13px;
+  color: #7d7d7d;
+  padding: 80px 0 0 0;
 }
 
 /* Responsive Css */
-@media (max-width: 1199px){
-    .aside .nav-toggler{
-        display: -ms-flexbox;
-        display: flex; 
-        left: 30px;
-    }
-    .aside .nav-toggler.open{
-        left: 200px;
-    }
-    .aside{
-        left: -270px;
-    }
-    .aside.open{
-        left: 0px;
-    }
+@media (max-width: 1199px) {
+  .aside .nav-toggler {
+    display: -ms-flexbox;
+    display: flex;
+    left: 30px;
+  }
+  .aside .nav-toggler.open {
+    left: 200px;
+  }
+  .aside {
+    left: -270px;
+  }
+  .aside.open {
+    left: 0px;
+  }
 }

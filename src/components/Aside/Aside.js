@@ -30,7 +30,9 @@ const Aside = () => {
 
             <div className="aside-inner">
                 <div className="logo">
-                    <Link to="/">LOGO</Link>
+                    <Link to="/">
+                        <img src='https://i.imgur.com/B2Ztq9w.png' alt="" />
+                    </Link>
                 </div>
 
                 <ul id="nav" className="my-nav">

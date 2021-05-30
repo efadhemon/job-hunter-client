@@ -19,8 +19,8 @@ const Profile = () => {
                         <img className="rounded-circle shadow" src={UserInfo.photo} alt="" width="100" height="100" />
                         <h2 className="mt-3">{UserInfo.name}</h2>
                         <p>{UserInfo.email}</p>
-                        
-                        <button onClick={handleLogout}>Log Out</button>
+
+                        <button className='btn_main' onClick={handleLogout}>Log Out</button>
                     </div>
                 </div>
             </div>
