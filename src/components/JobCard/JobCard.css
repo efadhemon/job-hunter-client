@@ -2,8 +2,8 @@
   border-radius: 20px;
   border: 1px solid teal;
   padding: 20px;
-  gap: 20px;
-  width: 350px;
+  margin-bottom: 30px;
+  width: 100%;
   cursor: pointer;
 }
 .title_bar {

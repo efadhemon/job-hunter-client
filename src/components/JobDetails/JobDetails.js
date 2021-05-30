@@ -1,6 +1,5 @@
 import React from "react";
 import "./JobDetails.css";
-import logo from "../../images/icons/tech-reactjs.svg";
 import employeeIcon from "../../images/icons/id-card.png";
 import experienceIcon from "../../images/icons/skills.png";
 import shiftIcon from "../../images/icons/shift.png";

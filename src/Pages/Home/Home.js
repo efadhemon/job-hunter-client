@@ -29,8 +29,9 @@ const Home = () => {
                     />
                     <button type="submit"> Search </button>
                 </form>
-                <div className="home_container">
-                    <div className="card_container">
+                <div className="home_container row">
+
+                    <div className="card_container col-md-4">
                         {
                             jobsData.map(data =>
                                 <JobCard
@@ -40,9 +41,11 @@ const Home = () => {
                                 />)
                         }
                     </div>
-                    <div className="job_details">
+
+                    <div className="job_details col-md-8">
                         <JobDetails data={activeCard} />
                     </div>
+
                 </div>
             </div>
         </section>
