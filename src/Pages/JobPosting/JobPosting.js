@@ -62,11 +62,11 @@ const JobPosting = () => {
               </div>
               <div className="input-area">
                 <select
-                  class="form-select form-select-sm"
+                  className="form-select form-select-sm"
                   aria-label=".form-select-sm example"
                   {...register("type", { required: true })}
                 >
-                  <option selected>Select Job type</option>
+                  <option value='' >Select Job type</option>
                   <option value="part time">part time</option>
                   <option value="full time">full time</option>
                   <option value="internship">internship</option>

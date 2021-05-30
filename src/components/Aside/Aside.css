@@ -130,6 +130,12 @@
     margin-right: 5px;
 }
 
+.aside .my-nav li a span{
+    background: lightgray;
+    padding: 5px;
+    border-radius: 15px;
+}
+
 
 .aside .copyright-text{
     font-size: 13px;

@@ -4,7 +4,8 @@ import dataIcon from '../images/tech-data-analysis.svg'
 import django from '../images/tech-django.svg'
 import aws from '../images/tech-aws.svg'
 const jobsData = [
-    {
+    {   
+        id: 1,
         role: [
             { title: 'Writing reusable, testable, and efficient code.' },
             { title: 'Take an active part in architecture decisions and complex development tasks.' },
@@ -31,6 +32,7 @@ const jobsData = [
 
     },
     {
+        id: 2,
         role: [
             { title: 'Writing reusable, testable, and efficient code.' },
             { title: 'Take an active part in architecture decisions and complex development tasks.' },
@@ -57,12 +59,14 @@ const jobsData = [
 
     },
     {
+        id: 3,
         icon: dataIcon,
         title: 'Data Analyser',
         companyName: ' Dev.to',
         employe: 12345,
         experience: '7-10 Years',
         jobType: 'Full Time',
+        
         salary: '145k-150k',
         role: [
             { title: 'Writing reusable, testable, and efficient code.' },
@@ -83,6 +87,7 @@ const jobsData = [
 
     },
     {
+        id: 4,
         role: [
             { title: 'Writing reusable, testable, and efficient code.' },
             { title: 'Take an active part in architecture decisions and complex development tasks.' },
@@ -109,6 +114,7 @@ const jobsData = [
 
     },
     {
+        id: 5,
         role: [
             { title: 'Writing reusable, testable, and efficient code.' },
             { title: 'Take an active part in architecture decisions and complex development tasks.' },
@@ -135,6 +141,7 @@ const jobsData = [
 
     },
     {
+        id: 6,
         role: [
             { title: 'Writing reusable, testable, and efficient code.' },
             { title: 'Take an active part in architecture decisions and complex development tasks.' },
@@ -161,6 +168,7 @@ const jobsData = [
 
     },
     {
+        id: 7,
         role: [
             { title: 'Writing reusable, testable, and efficient code.' },
             { title: 'Take an active part in architecture decisions and complex development tasks.' },
@@ -187,6 +195,7 @@ const jobsData = [
 
     },
     {
+        id: 8,
         role: [
             { title: 'Writing reusable, testable, and efficient code.' },
             { title: 'Take an active part in architecture decisions and complex development tasks.' },
@@ -213,6 +222,7 @@ const jobsData = [
 
     },
     {
+        id: 9,
         role: [
             { title: 'Writing reusable, testable, and efficient code.' },
             { title: 'Take an active part in architecture decisions and complex development tasks.' },
@@ -239,6 +249,7 @@ const jobsData = [
 
     },
     {
+        id: 10,
         role: [
             { title: 'Writing reusable, testable, and efficient code.' },
             { title: 'Take an active part in architecture decisions and complex development tasks.' },

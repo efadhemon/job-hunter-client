@@ -2,9 +2,14 @@ import React, { useState } from "react";
 import JobCard from "../../components/JobCard/JobCard";
 import "./Home.css";
 import JobDetails from "../../components/JobDetails/JobDetails";
-import jobsData from '../../FakeData/JobsData';
+import { useSelector } from "react-redux";
 const Home = () => {
-    const [activeCard, setActiveCard] = useState(jobsData?.[0]);
+
+    const jobs =  useSelector((state) => {
+        return state.jobs.allJobs;
+    })
+
+    const [activeCard, setActiveCard] = useState(jobs?.[0]);
     const [keywords, setKeywords] = useState("");
     const handleChange = (e) => {
         const newKeywords = e.target.value;
@@ -32,9 +37,9 @@ const Home = () => {
 
                     <div className="card_container col-md-4">
                         {
-                            jobsData.map(data =>
-                                <JobCard
-                                    data={data}
+                            jobs.map(job =>
+                                <JobCard key={job.id}
+                                    job={job}
                                     activeCard={activeCard}
                                     setActiveCard={setActiveCard}
                                 />)
@@ -42,7 +47,7 @@ const Home = () => {
                     </div>
 
                     <div className="job_details col-md-8">
-                        <JobDetails data={activeCard} />
+                        <JobDetails job={activeCard} />
                     </div>
 
                 </div>

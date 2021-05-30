@@ -85,24 +85,24 @@ select {
 
 /* Brand Colo css */
 .aside .logo a::before {
-  border-top: 4px solid #ec1839 !important;
-  border-left: 4px solid #ec1839 !important;
+  border-top: 4px solid teal !important;
+  border-left: 4px solid teal !important;
 }
 .aside .logo a::after {
-  border-right: 4px solid #ec1839 !important;
-  border-bottom: 4px solid #ec1839 !important;
+  border-right: 4px solid teal !important;
+  border-bottom: 4px solid teal !important;
 }
 
 .aside .my-nav li a:hover,
 .aside .my-nav li a.active {
-  color: #ec1839 !important;
+  color: teal !important;
 }
 
 
 .aside .nav-toggler span,
 .aside .nav-toggler span::before,
 .aside .nav-toggler span::after{
-  background-color: #ec1839 !important;
+  background-color: teal !important;
 }
 
 /* preloader */

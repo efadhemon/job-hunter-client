@@ -5,16 +5,15 @@ import experienceIcon from "../../images/icons/skills.png";
 import shiftIcon from "../../images/icons/shift.png";
 import typeIcon from "../../images/icons/schedule.png";
 
-const JobCard = ({ data, setActiveCard, activeCard }) => {
-  const { icon, title, companyName, employe, experience, jobType, salary } = data;
-  console.log(data, activeCard)
+const JobCard = ({ job, setActiveCard, activeCard }) => {
+  const { icon, title, companyName, employe, experience, jobType, salary } = job;
   return (
     <div
       className={
-        activeCard === data ?
+        activeCard === job ?
           'job_card active_card' : 'job_card'
       }
-      onClick={() => setActiveCard(data)}
+      onClick={() => setActiveCard(job)}
 
     >
       <div className="title_bar">
