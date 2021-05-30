@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import JobCard from "../../components/JobCard/JobCard";
 import "./Home.css";
-import jobIcon from "../../images/icons/tech-reactjs.svg";
 import JobDetails from "../../components/JobDetails/JobDetails";
 import jobsData from '../../FakeData/JobsData';
 const Home = () => {
