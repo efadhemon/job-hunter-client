@@ -1,0 +1,40 @@
+.job-details {
+  border-radius: 20px;
+  border: 1px solid teal;
+  padding: 30px;
+  width: 100%;
+}
+.company-logo {
+  width: 120px;
+}
+.job-main {
+  margin-right: 2rem;
+  margin-bottom: 2rem;
+}
+.details-container {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+.job-content {
+  margin: 2rem 0;
+}
+.apply-btn,
+.save-btn {
+  padding: 5px 15px;
+  background-color: teal;
+  border: 1px solid teal;
+  color: white;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  font-size: 1.2em;
+}
+.save-btn {
+  background-color: white;
+  border: 1px solid teal;
+  margin-left: 1rem;
+  color: teal;
+}
+.hr-style {
+  border: 1px solid rgb(190, 188, 188);
+}

@@ -11,10 +11,6 @@
   box-sizing: border-box;
 }
 
-html {
-  scroll-behavior: smooth;
-  transition: 0.3s;
-}
 
 body {
   margin: 0;
@@ -24,16 +20,19 @@ body {
   font-weight: 400;
   background: #f2f2fc;
 }
+
 ::after,
 ::before {
   box-sizing: border-box;
   transition: 0.3s;
 }
+
 input,
 textarea,
 select {
   font-family: "Montserrat", sans-serif;
 }
+
 .section {
   background: transparent !important;
   min-height: 100vh;
@@ -77,62 +76,12 @@ select {
   padding-top: 60px;
   padding-bottom: 70px;
 }
-.section-title {
-  -ms-flex: 0 0 100%;
-  flex: 0 0 100%;
-  max-width: 100%;
-  margin-bottom: 60px;
-}
-.section-title h2 {
-  font-size: 40px;
-  color: #302e4d;
-  font-family: "Rubik", sans-serif;
-  font-weight: 700;
-  margin: 0;
-  position: relative;
-}
-.section-title h2::before {
-  content: "";
-  width: 50px;
-  height: 4px;
-  position: absolute;
-  top: 100%;
-  left: 0;
-}
-.section-title h2::after {
-  content: "";
-  width: 25px;
-  height: 4px;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  margin-top: 8px;
-}
+
 .shadow-dark {
   -webkit-box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
   box-shadow: 0 0 20px rgba(48, 46, 77, 0.15);
 }
-.btn {
-  font-size: 16px;
-  font-family: "Rubik", sans-serif;
-  font-weight: 500;
-  padding: 12px 35px;
-  color: #ffffff;
-  border-radius: 40px;
-  -webkit-transition: all 0.3s ease;
-  display: inline-block;
-  transition: all 0.3s ease;
-  white-space: nowrap;
-  border: none;
-  cursor: pointer;
-}
-.btn:hover {
-  -webkit-transform: scale(1.05);
-  transform: scale(1.05);
-}
-.hidden {
-  display: none !important;
-}
+
 
 /* Brand Colo css */
 .aside .logo a::before {
@@ -143,47 +92,17 @@ select {
   border-right: 4px solid #ec1839 !important;
   border-bottom: 4px solid #ec1839 !important;
 }
-.projects .projects-box .projects-info .icon a,
-.about .about-content .about-text h3 span,
-.contact .contact-info-item .icon svg,
-.blog .blog-item .blog-info .blog-tags a,
-.projects .projects-box .projects-info .icon svg,
-body.dark .projects .projects-filter button.active,
-body.navy-blue .projects .projects-filter button.active,
-.projects .projects-filter button.active,
-.service .service-box .service-item .icon svg,
-body.dark .aside .my-nav li a:hover,
-body.dark .aside .my-nav li a.active,
-body.navy-blue .aside .my-nav li a:hover,
-body.navy-blue .aside .my-nav li a.active,
-.aside .resume-btn a,
+
 .aside .my-nav li a:hover,
 .aside .my-nav li a.active {
   color: #ec1839 !important;
 }
-.blog .blog-item .blog-img .blog-date,
-.service .service-box .service-item:hover .icon,
-.about .about-content .timeline .circle-dot,
-.about .about-content .timeline .timeline-item::before,
-.about .about-content .skills .skill-item .progress .progress-in,
-.btn,
-.about .about-content .about-info-title::after,
-.section-title h2::before,
-.section-title h2::after,
-.aside .nav-toggler span,
-.aside .resume-btn a:hover,
-.aside .nav-toggler span::before,
-.aside .nav-toggler span::after,
-.home .intro .social-links a {
-  background-color: #ec1839 !important;
-}
 
-.aside .resume-btn a,
-.projects .projects-box .projects-info .icon a,
-body.dark .projects .projects-filter button.active,
-body.navy-blue .projects .projects-filter button.active,
-.projects .projects-filter button.active {
-  border-color: #ec1839 !important;
+
+.aside .nav-toggler span,
+.aside .nav-toggler span::before,
+.aside .nav-toggler span::after{
+  background-color: #ec1839 !important;
 }
 
 /* preloader */
@@ -244,6 +163,7 @@ body.navy-blue .projects .projects-filter button.active,
   }
 }
 
+
 /* Responsive Css */
 @media (max-width: 1199px) {
   .section .my-container {
@@ -251,12 +171,6 @@ body.navy-blue .projects .projects-filter button.active,
   }
   .section {
     left: 0 !important;
-  }
-}
-
-@media (max-width: 991px) {
-  .particles-bg {
-    display: none !important;
   }
 }
 
