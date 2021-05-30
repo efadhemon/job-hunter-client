@@ -7,20 +7,20 @@ import { useSelector } from 'react-redux';
 
 
 const Aside = () => {
+  const { pathname } = useLocation();
+  let mainPath = pathname.split("/")[1];
 
-    const { pathname } = useLocation();
-    let mainPath = pathname.split('/')[1];
+  if (!mainPath) {
+    mainPath = "jobs";
+  }
 
-    if (!mainPath) {
-        mainPath = 'jobs'
-    }
+  const handleSidebar = () => {
+    const navTogglerBtn = document.querySelector(".nav-toggler");
+    const aside = document.querySelector(".aside");
+    aside.classList.toggle("open");
+    navTogglerBtn.classList.toggle("open");
+  };
 
-    const handleSidebar = () => {
-        const navTogglerBtn = document.querySelector('.nav-toggler');
-        const aside = document.querySelector('.aside');
-        aside.classList.toggle('open');
-        navTogglerBtn.classList.toggle('open');
-    }
 
     const appliedJobs =  useSelector((state) => {
         return state.jobs.applyList;
@@ -55,8 +55,8 @@ const Aside = () => {
                     &copy; {new Date().getFullYear()} The Job Hunter Website
                  </div>
             </div>
-        </div>
-    );
+      </div>
+  );
 };
 
 export default Aside;
