@@ -2,7 +2,7 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Home from "./Pages/Home/Home";
 import Aside from "./components/Aside/Aside";
-import Contact from "./Pages/Contact/Contact";
+
 import Profile from "./Pages/Profile/Profile";
 import Preloader from "./components/Preloader/Preloader";
 import JobPosting from "./Pages/JobPosting/JobPosting";
@@ -10,6 +10,7 @@ import AppliedJobs from "./Pages/AppliedJobs/AppliedJobs";
 import FavoriteJobs from "./Pages/FavoriteJobs/FavoriteJobs";
 import Login from "./Pages/Login/Login/Login";
 import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
+import Contributors from "./Pages/Contact/Contributor";
 
 window.addEventListener("load", function () {
   document.querySelector(".preloader").classList.add("opacity-0");
@@ -40,7 +41,7 @@ function App() {
           <FavoriteJobs></FavoriteJobs>
         </PrivateRoute>
         <PrivateRoute path="/contact">
-          <Contact></Contact>
+          <Contributors></Contributors>
         </PrivateRoute>
         <Route path="/login">
           <Login></Login>
