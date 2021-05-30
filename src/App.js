@@ -10,7 +10,7 @@ import AppliedJobs from "./Pages/AppliedJobs/AppliedJobs";
 import FavoriteJobs from "./Pages/FavoriteJobs/FavoriteJobs";
 import Login from "./Pages/Login/Login/Login";
 import PrivateRoute from "./Pages/Login/PrivateRoute/PrivateRoute";
-import Contributors from "./Pages/Contact/Contributor";
+import Contributors from "./Pages/Contributor/Contributor";
 
 window.addEventListener("load", function () {
   document.querySelector(".preloader").classList.add("opacity-0");
@@ -40,7 +40,7 @@ function App() {
         <PrivateRoute path="/favorite-jobs">
           <FavoriteJobs></FavoriteJobs>
         </PrivateRoute>
-        <PrivateRoute path="/contact">
+        <PrivateRoute path="/contributor">
           <Contributors></Contributors>
         </PrivateRoute>
         <Route path="/login">

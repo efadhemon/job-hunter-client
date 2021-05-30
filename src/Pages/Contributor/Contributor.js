@@ -10,21 +10,21 @@ import personaImg3 from "../../images/a.jpg";
 const personalInfo = [
   {
     id: 1,
-    first_name: "Mohammad emon",
+    name: "Mohammad emon",
     img: personaImg1,
-    description: "lorem",
+    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ex temporibus beatae voluptas quos inventore',
   },
   {
     id: 2,
-    first_name: "Mousumi Akter",
+    name: "Mousumi Akter",
     img: personaImg2,
-    description: "error: undefined method `/' for nil:NilClass",
+    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ex temporibus beatae voluptas quos inventore',
   },
   {
     id: 3,
-    first_name: "Albi ummid",
+    name: "Albi ummid",
     img: personaImg3,
-    description: "error: undefined method `/' for nil:NilClass",
+    description: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facilis ex temporibus beatae voluptas quos inventore',
   },
 ];
 const Contributors = () => {
@@ -43,19 +43,19 @@ const Contributors = () => {
           </div>
         </div>
       </div>
-      <div className="teams-section">
+      <div className="teams-section px-5">
         {personalInfo.map((info) => (
-          <div className="team-cards">
+          <div key={info.id} className="team-cards shadow">
             <div className="card-img">
               <img src={info.img} alt="" />
             </div>
-            <div>
-              <h2></h2>
+            <div className="mt-4 p-3">
+              <h2>{info.name}</h2>
+              <p>{info.description}</p>
             </div>
           </div>
         ))}
       </div>
-      <h2>title</h2>
     </section>
   );
 };
