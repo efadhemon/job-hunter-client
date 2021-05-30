@@ -6,56 +6,72 @@ import experienceIcon from "../../images/icons/skills.png";
 import shiftIcon from "../../images/icons/shift.png";
 import typeIcon from "../../images/icons/schedule.png";
 
-const JobDetails = () => {
+const JobDetails = ({ data }) => {
+  const { icon, title, companyName, employe, experience, jobType, salary, about, role, skills } = data;
   return (
     <div className="job-details">
       <div className="details-container">
-        <img src={logo} alt="" className="company-logo" />
+        <img src={icon} alt="" className="company-logo" />
         <div className="job-main">
-          <h3>Job Title</h3>
-          <p>company Name</p>
-          <button className="apply-btn">Apply now</button>
-          <button className="save-btn">save</button>
+          <h3>
+            {title}
+          </h3>
+          <p>
+            {companyName}
+          </p>
+          <div className="btn_div">
+            <button className="apply-btn">Apply now</button>
+            <button className="save-btn">save</button>
+          </div>
         </div>
       </div>
       <hr className="hr-style" />
       <div className="job_summary">
         <div className="summary_card">
           <img src={employeeIcon} alt="" />
-          <p>Employee</p>
+          <p>
+            {employe}
+          </p>
         </div>
         <div className="summary_card">
           <img src={experienceIcon} alt="" />
-          <p>Experience</p>
+          <p>
+            {experience}
+          </p>
         </div>
         <div className="summary_card">
           <img src={typeIcon} alt="" />
-          <p> Job Type </p>
+          <p>
+            {jobType}
+          </p>
         </div>
         <div className="summary_card">
           <img src={shiftIcon} alt="" />
-          <p> Salary: 45k-50k </p>
+          <p>
+            {salary}
+          </p>
         </div>
       </div>
       <div className="job-content">
         <h6>About</h6>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quos autem
-          rerum repellat, porro expedita quisquam! Eaque quos quibusdam
-          obcaecati hic.
+          {about}
         </p>
         <h6>The role</h6>
         <p>
-          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus id
-          in illum officia dolore temporibus, iste doloribus nam? Eaque nihil
-          voluptatibus ab quo exercitationem deleniti tempore beatae quod.
-          Possimus, magnam.
+          {
+            role?.map((data, index) =>
+              <li key={index}>{data.title}</li>
+            )
+          }
         </p>
         <h6>Skills</h6>
         <ul>
-          <li>React Js</li>
-          <li>JavaScript</li>
-          <li>Bootstrap</li>
+          {
+            skills.map((data, index) =>
+              <li key={index}> {data.title} </li>
+            )
+          }
         </ul>
       </div>
     </div>
