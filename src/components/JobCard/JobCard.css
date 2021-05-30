@@ -4,6 +4,7 @@
   padding: 20px;
   gap: 20px;
   width: 350px;
+  cursor: pointer;
 }
 .title_bar {
   display: flex;
@@ -58,4 +59,8 @@
 }
 .summary_card img {
   width: 20px;
+}
+
+.active_card {
+  background-color: #eeeeee;
 }
