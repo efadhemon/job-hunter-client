@@ -16,6 +16,9 @@ const JobDetails = ({ job }) => {
 
   const { icon, title, companyName, employe, experience, jobType, salary, about, role, skills } = job;
 
+  const { pathname } = useLocation();
+  const mainPath = pathname.split('/')[1];
+
   const appliedJobs = useSelector((state) => {
     return state.jobs.applyList;
   })
@@ -52,7 +55,7 @@ const JobDetails = ({ job }) => {
     if (!remainJobs) {
       dispatch(addToFavoriteList(job))
     } else {
-      swal("Hey", 'This is already added to favorites', 'error')
+      swal("Hey", 'This is already added to favorites', 'error');
     }
   }
 
@@ -71,12 +74,9 @@ const JobDetails = ({ job }) => {
       });
   }
 
-  const { pathname } = useLocation();
-  const mainPath = pathname.split('/')[1];
-
   return (
     <div className="job-details">
-      <div className="details-container">
+      <div className="details-info">
         <img src={icon} alt="" className="company-logo" />
         <div className="job-main">
           <h3>
@@ -88,7 +88,7 @@ const JobDetails = ({ job }) => {
           <div className="btn_div">
             <button onClick={() => handleApplyJob(job)} className="apply-btn">Apply now</button>
             {
-              mainPath === '' ?
+              mainPath === 'jobs' ?
                <button onClick={() => handleSaveJob(job)} className="save-btn">save</button>
                :
                <button onClick={() => handleRemoveFavoriteJob(job.id)} className="save-btn">Remove</button>
@@ -139,7 +139,7 @@ const JobDetails = ({ job }) => {
         <h6>Skills</h6>
         <ul>
           {
-            skills.map((data, index) =>
+            skills?.map((data, index) =>
               <li key={index}> {data.title} </li>
             )
           }

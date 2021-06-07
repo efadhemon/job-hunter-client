@@ -1,0 +1,66 @@
+
+.jobs.section{
+  height: 100vh;
+  overflow: hidden;
+}
+
+.search_bar {
+  max-width: 450px;
+  display: flex;
+  height: 40px;
+  margin: 0 auto;
+  border-bottom-left-radius: 10px;
+  border-top-right-radius: 10px;
+  border: 1px solid teal;
+}
+.search_bar > * {
+  background-color: white;
+}
+.search_bar > input {
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  outline: none;
+  font-size: large;
+  border: none;
+  width: 100%;
+  text-align: center;
+}
+.search_bar button {
+  color: white;
+  border-bottom-left-radius: 8px;
+  border-top-right-radius: 8px;
+  background-color: teal;
+  border: 1px solid teal;
+  cursor: pointer;
+  outline: none;
+  font-size: large;
+  padding: 5px 15px;
+  transition: all 0.3s ease-in-out;
+}
+.search_bar button:active {
+  opacity: 0.5;
+}
+.search_bar button:hover {
+  outline: none;
+  color: teal;
+  background-color: transparent;
+}
+
+.jobs_container{
+  margin-top: 100px !important;
+  height: 80vh;
+  overflow-y: scroll;
+}
+
+/* scrollbar css  */
+.jobs_container::-webkit-scrollbar {
+  width: 0;
+}
+
+.jobs_container::-webkit-scrollbar-track {
+  background: none;
+}
+
+.jobs_container::-webkit-scrollbar-thumb {
+  background: none;
+}

@@ -14,8 +14,8 @@ const Profile = () => {
     return (
         <section id="projects" className="projects section">
             <div className="my-container">
-                <div className="d-flex align-items-center justify-content-center">
-                    <div className="bg-wite shadow w-25 text-center p-5 rounded">
+                <div className="profile-section">
+                    <div className="profile-info">
                         <img className="rounded-circle shadow" src={UserInfo.photo} alt="" width="100" height="100" />
                         <h2 className="mt-3">{UserInfo.name}</h2>
                         <p>{UserInfo.email}</p>

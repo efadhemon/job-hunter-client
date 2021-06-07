@@ -21,7 +21,7 @@ const AppliedJobs = () => {
                     </div>
                 }
                 {
-                    appliedJobs.length === 0 && <h1 style={{ height: '100vh' }} className="d-flex align-items-center justify-content-center">You Have No Applied Jobs</h1>
+                    appliedJobs.length === 0 && <h1 style={{ height: '90vh' }} className="d-flex align-items-center justify-content-center">You Have No Applied Jobs</h1>
                 }
             </div>
         </section>

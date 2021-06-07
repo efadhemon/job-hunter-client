@@ -2,11 +2,16 @@
   border-radius: 20px;
   border: 1px solid teal;
   padding: 30px;
-  width: 100%;
+  position: fixed;
+  margin-right: 30px;
+  overflow-y: scroll;
+  height: 500px;
 }
+
 .company-logo {
   width: 120px;
 }
+
 .btn_div {
   display: flex;
   align-items: center;
@@ -14,7 +19,7 @@
   flex-wrap: wrap;
   gap: 20px;
 }
-.details-container {
+.details-info {
   display: flex;
   justify-content: space-evenly;
   flex-wrap: wrap;
@@ -41,4 +46,17 @@
 }
 .hr-style {
   border: 1px solid rgb(190, 188, 188);
+}
+
+/* scrollbar css  */
+.job-details::-webkit-scrollbar {
+  width: 0;
+}
+
+.job-details::-webkit-scrollbar-track {
+  background: none;
+}
+
+.job-details::-webkit-scrollbar-thumb {
+  background: none;
 }

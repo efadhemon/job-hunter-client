@@ -22,7 +22,7 @@ export const jobSlice = createSlice({
     },
     removeToFavoriteList: (state, {payload}) => {
       const newFavoriteList = state.favoriteList.filter((j) => j.id !== payload)
-      state.favoriteList = newFavoriteList;
+      state.favoriteList = [...newFavoriteList];
     },
   },
 })

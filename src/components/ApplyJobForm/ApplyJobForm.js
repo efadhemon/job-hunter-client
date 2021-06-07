@@ -35,7 +35,7 @@ const ApplyJobForm = ({ modalIsOpen, closeModal, job }) => {
 
     const onSubmit = data => {
         if (data) {
-            if (mainPath === '') {
+            if (mainPath === 'jobs') {
                 dispatch(addTOApplyList(job));
             }
             if (mainPath === 'favorite-jobs') {
